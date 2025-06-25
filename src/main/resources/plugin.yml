@@ -1,0 +1,12 @@
+name: Untitled
+version: 1.0-SNAPSHOT
+main: net.subworld.SubAuth
+api-version: 1.21
+
+commands:
+  register:
+    description: Регистрация нового аккаунта
+    usage: /register <пароль> <подтверждение>
+  login:
+    description: Вход в аккаунт
+    usage: /login <пароль>
