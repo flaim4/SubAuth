@@ -1,12 +1,27 @@
-name: Untitled
-version: 1.0-SNAPSHOT
+name: SubAuth
+version: SubAuth-1.0
 main: net.subworld.SubAuth
 api-version: 1.21
+description: Плагин авторизации игроков
+author: YourName
+website: yourwebsite.com
 
 commands:
   register:
     description: Регистрация нового аккаунта
     usage: /register <пароль> <подтверждение>
+    aliases: [reg]
   login:
     description: Вход в аккаунт
     usage: /login <пароль>
+    aliases: [l]
+  subauth:
+    description: Управление плагином авторизации
+    usage: /subauth reload
+    permission: subauth.reload
+    permission-message: "§cУ вас нет прав на эту команду!"
+
+permissions:
+  subauth.reload:
+    description: Позволяет перезагружать конфигурацию плагина
+    default: op
