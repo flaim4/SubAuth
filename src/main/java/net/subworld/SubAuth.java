@@ -339,7 +339,6 @@ public final class SubAuth extends JavaPlugin implements Listener {
                             cancelActionBarTask(player.getUniqueId());
                             connect(config.getString("connect.name-server"), player);
 
-                            // Обновляем список команд для игрока
                             player.updateCommands();
                         });
                     }
